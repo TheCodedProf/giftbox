@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Created w/ "python3 -m discord newbot"
+# Created by dragdev-studios
+
 
 from discord.ext import commands
 import sys
