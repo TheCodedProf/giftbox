@@ -46,6 +46,6 @@ async def invite(ctx):
 
 @bot.command()
 async def ping(ctx):
-    await ctx.send(f"Pong! `{bot.latency*1000}ms`")
+    await ctx.send(f":ping_pong: Pong! `{bot.latency*1000}ms`")
 
 bot.run(config.token)
