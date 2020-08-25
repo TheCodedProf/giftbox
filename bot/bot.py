@@ -32,4 +32,16 @@ def on_disconnect():
 
 # write general commands here
 
+@bot.Command()
+async def info(ctx):
+    pass
+
+@bot.Command()
+async def about(ctx):
+    pass
+
+@bot.Command()
+async def invite(ctx):
+    await ctx.send(f"**Invite me to your server!** \n[link]")
+
 bot.run(config.token)
