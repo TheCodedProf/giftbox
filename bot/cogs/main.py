@@ -21,4 +21,4 @@ class main:
         await ctx.send(f":ping_pong: Pong! `{bot.latency*1000}ms`")
 
 def setup(bot):
-    bot.add_cog(MainCog(bot))
+    bot.add_cog(main(bot))
