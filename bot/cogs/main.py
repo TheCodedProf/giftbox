@@ -1,24 +1,24 @@
 from discord.ext import commands
 
-class main:
+class main(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
     
-    @bot.command()
-    async def info(ctx):
+    @commands.command()
+    async def info(self,ctx):
         pass
 
-    @bot.command()
-    async def about(ctx):
+    @commands.command()
+    async def about(self,ctx):
         pass
 
-    @bot.command()
-    async def invite(ctx):
+    @commands.command()
+    async def invite(self,ctx):
         await ctx.send(f"**Invite me to your server!** \n[link]")
 
-    @bot.command()
-    async def ping(ctx):
-        await ctx.send(f":ping_pong: Pong! `{bot.latency*1000}ms`")
+    @commands.command()
+    async def ping(self,ctx):
+        await ctx.send(f":ping_pong: Pong! `{self.bot.latency*1000}ms`")
 
 def setup(bot):
     bot.add_cog(main(bot))
