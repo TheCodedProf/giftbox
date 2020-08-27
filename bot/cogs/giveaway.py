@@ -6,7 +6,7 @@ class main(commands.Cog):
     @commands.group()
     async def giveaway(self,ctx):
         '''Controls a giveaway'''
-        await ctx.send("Invalid command passed. Use `giveaway add` to start a giveaaway.")
+        await ctx.send("Invalid command passed. Use `giveaway add` to start a giveaway.")
 
     @giveaway.command()
     async def add(self, ctx):
